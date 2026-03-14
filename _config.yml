@@ -18,15 +18,15 @@ dates:
 # ── Navigation ──
 nav:
   - label: "About"
-    url: "/2026/index.html"
+    url: "/2026/"
   - label: "Call for Papers"
-    url: "/2026/cfp.html"
+    url: "/2026/cfp/"
   - label: "Organization"
-    url: "/2026/organization.html"
+    url: "/2026/organization/"
   - label: "Program"
-    url: "/2026/program.html"
-  - label: "Previous Editions"
-    url: "/2026/previous.html"
+    url: "/2026/program/"
+  - label: "Previous Edition"
+    url: "/2026/previous/"
 
 
 # ── People ──
