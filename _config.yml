@@ -1,0 +1,89 @@
+# ── Site-wide variables ──
+title: "QC&DKM 2026"
+workshop_full_name: "Workshop on Quantum Computing and Data/Knowledge Management"
+workshop_short_name: "QC&DKM"
+year: 2026
+conference: "VLDB 2026"
+conference_url: "https://vldb.org/2026/"
+location: "Boston, MA, USA"
+
+# ── Important Dates ──
+dates:
+  cfp_announcement: "March 2026"
+  submission_deadline: "May 29th 2026"
+  notification: "June 30th 2026"
+  camera_ready: "July 17th 2026"
+  workshop: "September 4th 2026"
+
+# ── Navigation ──
+nav:
+  - label: "About"
+    url: "/2026/index.html"
+  - label: "Call for Papers"
+    url: "/2026/cfp.html"
+  - label: "Organization"
+    url: "/2026/organization.html"
+  - label: "Program"
+    url: "/2026/program.html"
+  - label: "Previous Editions"
+    url: "/2026/previous.html"
+
+
+# ── People ──
+general_chairs:
+  - name: "Haridimos Kondylakis"
+    affiliation: "University of Crete, Greece"
+    email: "kondylak@ics.forth.gr"
+    bio: "Associate Professor of Big Data Engineering. Affiliated Researcher at FORTH-ICS. Has delivered tutorials at EDBT, ISWC, VLDB and co-organized workshops and conferences including ISWC, IJCKG, HEDAI, QCDK, and IEEE Quantum Workshop."
+  - name: "Stefanie Scherzinger"
+    affiliation: "University of Passau, Germany"
+    email: "stefanie.scherzinger@uni-passau.de"
+    bio: "Full Professor of Computer Science, heading the Scalable Database Systems group. Research focuses on database schema management and quantum computing for database management tasks including query optimization and schema matching."
+
+pc_chairs:
+  - name: "Bettina Kemme"
+    affiliation: "McGill University, Canada"
+    email: "bettina.kemme@mcgill.ca"
+    bio: "Professor and head of the Distributed Information Systems Lab (DISL). Over 100 refereed publications. Recipient of the VLDB 10-Year Test-of-Time Award and the 2024 VLDB Women in Database Award."
+  - name: "Vasilis Efthymiou"
+    affiliation: "Harokopio University of Athens, Greece"
+    email: "vefthym@hua.gr"
+    bio: "Assistant Professor. Formerly Postdoctoral Researcher at FORTH-ICS and IBM Research. Has given tutorials at SIGMOD, VLDB, WWW, ICDE, CIKM, ESWC and co-authored two books."
+  - name: "Yannis Tzitzikas"
+    affiliation: "University of Crete & FORTH-ICS, Greece"
+    email: "yannis@ics.forth.gr"
+    bio: "Professor of Information Systems. Head of Centre for Cultural Informatics of FORTH-ICS. Co-authored 3 books and over 210 papers. Four best paper awards."
+
+proceedings_chairs:
+  - name: "Manuel Wimmer"
+    affiliation: "Johannes Kepler University Linz, Austria"
+    email: "manuel.wimmer@jku.at"
+    bio: "Full Professor, Institute of Business Informatics - Software Engineering. Research in software engineering for quantum computing, cyber-physical systems, and digital twins."
+  - name: "Jose Garcia-Alonso"
+    affiliation: "University of Extremadura, Spain"
+    email: "jgaralo@unex.es"
+    bio: "Associate Professor. Research spans quantum software engineering, pervasive computing, e-Health, and service-oriented systems. Director of Technology Transfer and Business Development."
+
+pc_members:
+  - name: "Jose Garcia-Alonso"
+    affiliation: "University of Extremadura, Spain"
+  - name: "Oleksandr Kozachuk"
+    affiliation: "Exasol, Germany"
+  - name: "Nicole Schweikardt"
+    affiliation: "Humboldt University of Berlin, Germany"
+  - name: "Uta Störl"
+    affiliation: "Fernuniversität in Hagen, Germany"
+  - name: "George Stamatiou"
+    affiliation: "FORTH-ICS, Greece"
+  - name: "Manuel Wimmer"
+    affiliation: "Johannes Kepler University Linz, Austria"
+  - name: "Frank Leymann"
+    affiliation: "University of Stuttgart, Germany"
+  - name: "Floris Geerts"
+    affiliation: "University of Antwerp, Belgium"
+  - name: "Grigoris Karvounarakis"
+    affiliation: "RelationalAI, USA"
+
+# ── Jekyll settings ──
+baseurl: ""
+exclude: ["_config.yml", "README.md", ".venv"]

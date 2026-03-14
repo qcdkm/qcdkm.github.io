@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/2026/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>{{ site.title }}</h1>
+    <div class="subtitle">{{ site.workshop_full_name }}</div>
+    <div class="venue">Co-located with <a href="{{ site.conference_url }}" style="color:#bbdefb">{{ site.conference }}</a> &mdash; {{ site.dates.workshop }} &mdash; {{ site.location }}</div>
+</header>
+
+<nav>
+    {% for item in site.nav %}
+    <a href="{{ item.url | relative_url }}"{% if page.nav_id == item.url %} class="active"{% endif %}>{{ item.label }}</a>
+    {% endfor %}
+</nav>
+
+<main>
+{{ content }}
+</main>
+
+<footer>
+    &copy; {{ site.year }} {{ site.title }} Workshop Organizers
+</footer>
+
+</body>
+</html>

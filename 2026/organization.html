@@ -1,0 +1,49 @@
+---
+layout: default
+title: Organization
+nav_id: /2026/organization.html
+---
+
+<h2>General Chairs</h2>
+<div class="person-grid">
+{% for person in site.general_chairs %}
+<div class="person-card">
+    <strong>{{ person.name }}</strong>
+    <span class="affiliation">{{ person.affiliation }}</span>
+    <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+    <p class="person-bio-text">{{ person.bio }}</p>
+</div>
+{% endfor %}
+</div>
+
+<h2>Program Committee Chairs</h2>
+<div class="person-grid">
+{% for person in site.pc_chairs %}
+<div class="person-card">
+    <strong>{{ person.name }}</strong>
+    <span class="affiliation">{{ person.affiliation }}</span>
+    <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+    <p class="person-bio-text">{{ person.bio }}</p>
+</div>
+{% endfor %}
+</div>
+
+<h2>Proceedings &amp; Publicity Chairs</h2>
+<div class="person-grid">
+{% for person in site.proceedings_chairs %}
+<div class="person-card">
+    <strong>{{ person.name }}</strong>
+    <span class="affiliation">{{ person.affiliation }}</span>
+    <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+    <p class="person-bio-text">{{ person.bio }}</p>
+</div>
+{% endfor %}
+</div>
+
+<h2>Program Committee</h2>
+<ul>
+{% for person in site.pc_members %}
+    <li><strong>{{ person.name }}</strong> - {{ person.affiliation }}</li>
+{% endfor %}
+</ul>
+<p><em>The PC (Program Committee) will be actively expanded after proposal acceptance to further broaden coverage of quantum-specific algorithms and hybrid systems.</em></p>
