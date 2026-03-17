@@ -49,8 +49,8 @@ a:hover { text-decoration: underline; }
     gap: 0.4em;
 }
 .header-icon {
-    width: 1.6em;
-    height: 1.6em;
+    width: 2em;
+    height: 2em;
     vertical-align: middle;
 }
 .site-header .subtitle {
@@ -76,8 +76,14 @@ nav a {
     font-weight: 500;
     transition: background 0.2s;
 }
-nav a:hover, nav a.active {
+nav a:hover {
     background: rgba(255,255,255,0.15);
+    text-decoration: none;
+}
+nav a.active {
+    background: rgba(255,255,255,0.22);
+    border-bottom: 2px solid #bbdefb;
+    font-weight: 600;
     text-decoration: none;
 }
 

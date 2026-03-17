@@ -6,6 +6,8 @@ year: 2026
 conference: "VLDB 2026"
 conference_url: "https://vldb.org/2026/"
 location: "Boston, MA, USA"
+vldb_workshop_style_url: "https://github.com/haixun/haixun.github.io/blob/master/vldb/vldb-workshop-style-master.zip"
+ijckg2025_url: "https://ijckg2025.github.io/workshops/workshops.html#quantum_computing"
 
 # ── Important Dates ──
 dates:
@@ -25,7 +27,7 @@ nav:
     url: "/2026/organization/"
   - label: "Program"
     url: "/2026/program/"
-  - label: "Previous Edition"
+  - label: "Previous Editions"
     url: "/2026/previous/"
 
 
