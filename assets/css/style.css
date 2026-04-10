@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-a { color: #1a5276; text-decoration: none; }
+a { color: #0f53b8da; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .hero-banner {
@@ -151,6 +151,18 @@ tr:nth-child(even) { background: #f9f9fb; }
     font-size: 0.85rem;
     margin-top: 0.4rem;
     color: #555;
+}
+.person-card-alt  {
+    background: #f5f6fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 0.8rem;
+}
+.person-card-alt strong { color: #1a237e; }
+.person-card-alt .affiliation { font-size: 0.9rem; color: #555; }
+#pc-members-list {
+    display: grid;
+    gap: 10px;
 }
 
 .dates-box {

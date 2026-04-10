@@ -9,7 +9,7 @@ permalink: /2026/organization/
 <div class="person-grid">
 {% for person in site.general_chairs %}
 <div class="person-card">
-    <strong>{{ person.name }}</strong>
+    <strong>{{ person.first_name }} {{ person.last_name }}</strong>
     <span class="affiliation">{{ person.affiliation }}</span>
     <a href="mailto:{{ person.email }}">{{ person.email }}</a>
     <p class="person-bio-text">{{ person.bio }}</p>
@@ -21,7 +21,7 @@ permalink: /2026/organization/
 <div class="person-grid">
 {% for person in site.pc_chairs %}
 <div class="person-card">
-    <strong>{{ person.name }}</strong>
+    <strong>{{ person.first_name }} {{ person.last_name }}</strong>
     <span class="affiliation">{{ person.affiliation }}</span>
     <a href="mailto:{{ person.email }}">{{ person.email }}</a>
     <p class="person-bio-text">{{ person.bio }}</p>
@@ -33,7 +33,7 @@ permalink: /2026/organization/
 <div class="person-grid">
 {% for person in site.proceedings_chairs %}
 <div class="person-card">
-    <strong>{{ person.name }}</strong>
+    <strong>{{ person.first_name }} {{ person.last_name }}</strong>
     <span class="affiliation">{{ person.affiliation }}</span>
     <a href="mailto:{{ person.email }}">{{ person.email }}</a>
     <p class="person-bio-text">{{ person.bio }}</p>
@@ -42,8 +42,13 @@ permalink: /2026/organization/
 </div>
 
 <h2>Program Committee</h2>
-<ul>
-{% for person in site.pc_members %}
-    <li><strong>{{ person.name }}</strong> - {{ person.affiliation }}</li>
-{% endfor %}
-</ul>
+<div id="pc-members-list">
+    {% assign sorted_members = site.pc_members | sort: "last_name" %}
+    {% for person in sorted_members %}
+        <div class="person-card-alt">
+            <strong>{{ person.first_name }} {{ person.last_name }}</strong>
+            <span class="affiliation">|</span>
+            <span class="affiliation">{{ person.affiliation }}</span>
+        </div>
+    {% endfor %}
+</div>
