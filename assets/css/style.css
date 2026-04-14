@@ -88,7 +88,7 @@ nav a.active {
 }
 
 main {
-    max-width: 860px;
+    max-width: 960px;
     margin: 2rem auto;
     padding: 0 1.2rem 3rem;
     flex: 1;
@@ -134,7 +134,7 @@ tr:nth-child(even) { background: #f9f9fb; }
 
 .person-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     margin: 1rem 0 1.5rem;
 }
@@ -144,7 +144,35 @@ tr:nth-child(even) { background: #f9f9fb; }
     border-radius: 6px;
     padding: 1rem;
 }
-.person-card strong { display: block; color: #1a237e; }
+.person-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.35rem;
+}
+.person-headline {
+    min-width: 0;
+}
+.person-avatar,
+.pc-avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 2px solid #bbdefb;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+.person-avatar-fallback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #132a6f, #0a7abf);
+    color: #e8f6ff;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+.person-card strong { display: block; color: #103977da; }
 .person-card .affiliation { font-size: 0.9rem; color: #555; }
 .person-card a { font-size: 0.85rem; }
 .person-bio-text {
@@ -152,18 +180,30 @@ tr:nth-child(even) { background: #f9f9fb; }
     margin-top: 0.4rem;
     color: #555;
 }
-.person-card-alt  {
-    background: #f5f6fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    padding: 0.8rem;
-}
-.person-card-alt strong { color: #1a237e; }
-.person-card-alt .affiliation { font-size: 0.9rem; color: #555; }
+
 #pc-members-list {
     display: grid;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0;
+    margin: 1rem 0 1.5rem;
 }
+.pc-member {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 6px 4px;
+    border-bottom: 0.5px solid #eee;
+}
+.pc-member-info {
+    min-width: 0;
+}
+.pc-avatar {
+    width: 64px;
+    height: 64px;
+    font-size: 0.86rem;
+}
+.pc-member strong { color: #103977da; font-size: 0.92rem; white-space: nowrap; display: block; }
+.pc-member .affiliation { font-size: 0.85rem; color: #777; display: block; }
 
 .dates-box {
     background: #e8eaf6;
@@ -190,4 +230,12 @@ footer {
     nav a { padding: 0.6rem 0.7rem; font-size: 0.82rem; }
     main { padding: 0 0.8rem 2rem; }
     .person-grid { grid-template-columns: 1fr; }
+    .person-avatar {
+        width: 72px;
+        height: 72px;
+    }
+    .pc-avatar {
+        width: 52px;
+        height: 52px;
+    }
 }
