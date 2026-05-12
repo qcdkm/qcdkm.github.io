@@ -88,6 +88,7 @@ nav a.active {
 }
 
 main {
+    position: relative;
     max-width: 960px;
     margin: 2rem auto;
     padding: 0 1.2rem 3rem;
@@ -223,6 +224,26 @@ footer {
     color: #777;
     border-top: 1px solid #eee;
     margin-top: 2rem;
+}
+
+.dates-sidebar {
+    position: absolute;
+    right: -55%;
+    top: 0;
+    z-index: 100;
+}
+
+@media (min-width: 1920px) and (max-width: 2180px) {
+    .dates-sidebar { right: -43%; }
+}
+
+@media (max-width: 1919px) {
+    .dates-sidebar {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 600px) {
