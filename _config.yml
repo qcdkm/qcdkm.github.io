@@ -49,12 +49,6 @@ general_chairs:
     photo: ""
 
 pc_chairs:
-  - first_name: "Bettina"
-    last_name: "Kemme"
-    affiliation: "McGill University, Canada"
-    email: "bettina.kemme@mcgill.ca"
-    bio: "Professor and head of the Distributed Information Systems Lab (DISL). Over 100 refereed publications. Recipient of the VLDB 10-Year Test-of-Time Award and the 2024 VLDB Women in Database Award."
-    photo: ""
   - first_name: "Vasilis"
     last_name: "Efthymiou"
     affiliation: "Harokopio University of Athens, Greece"
@@ -114,6 +108,12 @@ pc_members:
   - first_name: "Frank"
     last_name: "Leymann"
     affiliation: "University of Stuttgart, Germany"
+    photo: ""
+  - first_name: "Bettina"
+    last_name: "Kemme"
+    affiliation: "McGill University, Canada"
+    email: "bettina.kemme@mcgill.ca"
+    bio: "Professor and head of the Distributed Information Systems Lab (DISL). Over 100 refereed publications. Recipient of the VLDB 10-Year Test-of-Time Award and the 2024 VLDB Women in Database Award."
     photo: ""
 
 # ── Jekyll settings ──
