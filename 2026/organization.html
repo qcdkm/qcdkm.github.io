@@ -7,77 +7,80 @@ permalink: /2026/organization/
 
 <h2>General Chairs</h2>
 <div class="person-grid">
-    {% for person in site.general_chairs %}
-    <div class="person-card">
-        <div class="person-top">
-            {% assign person_photo = person.photo | default: "" | strip %}
-            {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}
-            {% if person_photo != "" %}
-                <img class="person-avatar" src="{{ person.photo | relative_url }}" alt="Photo of {{ person.first_name }} {{ person.last_name }}">
-            {% else %}
-                <span class="person-avatar person-avatar-fallback" aria-hidden="true">{{ initials | upcase }}</span>
-            {% endif %}
-            <div class="person-headline">
-                <strong>{{ person.first_name }} {{ person.last_name }}</strong>
-                <span class="affiliation">{{ person.affiliation }}</span>
+    {% for person_id in site.general_chairs %}
+        {% assign person = site.people[person_id] %}
+        <div class="person-card">
+            <div class="person-top">
+                {% assign person_photo = person.photo | default: "" | strip %}
+                {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}
+                {% if person_photo != "" %}
+                    <img class="person-avatar" src="{{ person.photo | relative_url }}" alt="Photo of {{ person.first_name }} {{ person.last_name }}">
+                {% else %}
+                    <span class="person-avatar person-avatar-fallback" aria-hidden="true">{{ initials | upcase }}</span>
+                {% endif %}
+                <div class="person-headline">
+                    <strong>{{ person.first_name }} {{ person.last_name }}</strong>
+                    <span class="affiliation">{{ person.affiliation }}</span>
+                    {% if person.email %}<a href="mailto:{{ person.email }}">{{ person.email }}</a>{% endif %}
+                </div>
             </div>
+            <p class="person-bio-text">{{ person.bio }}</p>
         </div>
-        <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-        <p class="person-bio-text">{{ person.bio }}</p>
-    </div>
     {% endfor %}
 </div>
 
 <h2>Program Committee Chairs</h2>
 <div class="person-grid">
-    {% for person in site.pc_chairs %}
-    <div class="person-card">
-        <div class="person-top">
-            {% assign person_photo = person.photo | default: "" | strip %}
-            {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}
-            {% if person_photo != "" %}
-                <img class="person-avatar" src="{{ person.photo | relative_url }}" alt="Photo of {{ person.first_name }} {{ person.last_name }}">
-            {% else %}
-                <span class="person-avatar person-avatar-fallback" aria-hidden="true">{{ initials | upcase }}</span>
-            {% endif %}
-            <div class="person-headline">
-                <strong>{{ person.first_name }} {{ person.last_name }}</strong>
-                <span class="affiliation">{{ person.affiliation }}</span>
+    {% for person_id in site.pc_chairs %}
+        {% assign person = site.people[person_id] %}
+        <div class="person-card">
+            <div class="person-top">
+                {% assign person_photo = person.photo | default: "" | strip %}
+                {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}
+                {% if person_photo != "" %}
+                    <img class="person-avatar" src="{{ person.photo | relative_url }}" alt="Photo of {{ person.first_name }} {{ person.last_name }}">
+                {% else %}
+                    <span class="person-avatar person-avatar-fallback" aria-hidden="true">{{ initials | upcase }}</span>
+                {% endif %}
+                <div class="person-headline">
+                    <strong>{{ person.first_name }} {{ person.last_name }}</strong>
+                    <span class="affiliation">{{ person.affiliation }}</span>
+                    {% if person.email %}<a href="mailto:{{ person.email }}">{{ person.email }}</a>{% endif %}
+                </div>
             </div>
+            <p class="person-bio-text">{{ person.bio }}</p>
         </div>
-        <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-        <p class="person-bio-text">{{ person.bio }}</p>
-    </div>
     {% endfor %}
 </div>
 
 <h2>Proceedings &amp; Publicity Chairs</h2>
 <div class="person-grid">
-    {% for person in site.proceedings_chairs %}
-    <div class="person-card">
-        <div class="person-top">
-            {% assign person_photo = person.photo | default: "" | strip %}
-            {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}
-            {% if person_photo != "" %}
-                <img class="person-avatar" src="{{ person.photo | relative_url }}" alt="Photo of {{ person.first_name }} {{ person.last_name }}">
-            {% else %}
-                <span class="person-avatar person-avatar-fallback" aria-hidden="true">{{ initials | upcase }}</span>
-            {% endif %}
-            <div class="person-headline">
-                <strong>{{ person.first_name }} {{ person.last_name }}</strong>
-                <span class="affiliation">{{ person.affiliation }}</span>
+    {% for person_id in site.proceedings_chairs %}
+        {% assign person = site.people[person_id] %}
+        <div class="person-card">
+            <div class="person-top">
+                {% assign person_photo = person.photo | default: "" | strip %}
+                {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}
+                {% if person_photo != "" %}
+                    <img class="person-avatar" src="{{ person.photo | relative_url }}" alt="Photo of {{ person.first_name }} {{ person.last_name }}">
+                {% else %}
+                    <span class="person-avatar person-avatar-fallback" aria-hidden="true">{{ initials | upcase }}</span>
+                {% endif %}
+                <div class="person-headline">
+                    <strong>{{ person.first_name }} {{ person.last_name }}</strong>
+                    <span class="affiliation">{{ person.affiliation }}</span>
+                    {% if person.email %}<a href="mailto:{{ person.email }}">{{ person.email }}</a>{% endif %}
+                </div>
             </div>
+            <p class="person-bio-text">{{ person.bio }}</p>
         </div>
-        <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-        <p class="person-bio-text">{{ person.bio }}</p>
-    </div>
     {% endfor %}
 </div>
 
 <h2>Program Committee</h2>
 <div id="pc-members-list">
-    {% assign sorted_members = site.pc_members | sort: "last_name" %}
-    {% for person in sorted_members %}
+    {% for person_id in site.pc_members %}
+        {% assign person = site.people[person_id] %}
         <div class="pc-member">
             {% assign person_photo = person.photo | default: "" | strip %}
             {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}

@@ -1,4 +1,4 @@
-# ── Site-wide variables ──
+# Site-wide variables
 title: "QC&DKM 2026"
 workshop_full_name: "2nd Workshop on Quantum Computing and Data/Knowledge Management"
 workshop_short_name: "QC&DKM"
@@ -10,7 +10,7 @@ vldb_workshop_style_url: "assets/files/vldb-workshop-style-master.zip"
 ijckg2025_url: "https://ijckg2025.github.io/workshops/workshops.html#quantum_computing"
 submission_url: "https://cmt3.research.microsoft.com/QCDKM2026/"
 
-# ── Important Dates ──
+# Important Dates
 dates:
   cfp_announcement: "March 2026"
   submission_deadline: "May 29th 2026"
@@ -19,7 +19,7 @@ dates:
   camera_ready: "July 17th 2026"
   workshop: "September 4th 2026"
 
-# ── Navigation ──
+# Navigation
 nav:
   - label: "About"
     url: "/2026/"
@@ -32,89 +32,160 @@ nav:
   - label: "Previous Editions"
     url: "/2026/previous/"
 
-
-# ── People ──
-general_chairs:
-  - first_name: "Haridimos"
+# People
+people:
+  haridimos_kondylakis:
+    first_name: "Haridimos"
     last_name: "Kondylakis"
     affiliation: "University of Crete, Greece"
     email: "kondylak@ics.forth.gr"
     bio: "Associate Professor of Big Data Engineering. Affiliated Researcher at FORTH-ICS. Has delivered tutorials at EDBT, ISWC, VLDB and co-organized workshops and conferences including ISWC, IJCKG, HEDAI, QCDK, and IEEE Quantum Workshop."
-    photo: ""
-  - first_name: "Stefanie"
+    photo: "https://media.licdn.com/dms/image/v2/D5603AQHjkM_7KQI8tQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699860894261?e=1783555200&v=beta&t=0AUEciUECmGvCa2rU6LJNgm9cXbft9lPoP6R5Qrdx6I"
+
+  stefanie_scherzinger:
+    first_name: "Stefanie"
     last_name: "Scherzinger"
     affiliation: "University of Passau, Germany"
     email: "stefanie.scherzinger@uni-passau.de"
     bio: "Full Professor of Computer Science, heading the Scalable Database Systems group. Research focuses on database schema management and quantum computing for database management tasks including query optimization and schema matching."
-    photo: ""
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQFQuWFun0AKLg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1666036575805?e=2147483647&v=beta&t=sLcraGV2gzSvlf7UsfniNd8455VIuHbRDZw8k4Iq0tM"
 
-pc_chairs:
-  - first_name: "Vasilis"
+  vasilis_efthymiou:
+    first_name: "Vasilis"
     last_name: "Efthymiou"
     affiliation: "Harokopio University of Athens, Greece"
     email: "vefthym@hua.gr"
     bio: "Assistant Professor. Formerly Postdoctoral Researcher at FORTH-ICS and IBM Research. Has given tutorials at SIGMOD, VLDB, WWW, ICDE, CIKM, ESWC and co-authored two books."
-    photo: ""
-  - first_name: "Yannis"
+    photo: "https://media.licdn.com/dms/image/v2/D4D03AQFW0R06zKPYxQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1704302389030?e=1783555200&v=beta&t=Lp-PvVWhGxle1_VXm3LnyLXpUaN96WSmJbVKQSXoWuM"
+  
+  yannis_tzitzikas:
+    first_name: "Yannis"
     last_name: "Tzitzikas"
     affiliation: "University of Crete & FORTH-ICS, Greece"
     email: "yannis@ics.forth.gr"
     bio: "Professor of Information Systems. Head of Centre for Cultural Informatics of FORTH-ICS. Co-authored 3 books and over 210 papers. Four best paper awards."
-    photo: ""
+    photo: "https://media.licdn.com/dms/image/v2/D4D03AQEjNDtxFpwNRg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694774163044?e=1783555200&v=beta&t=RoLZL85s7L4RcsQywRHoGJ3Hlm95WcpRbwx0kKGQv7c"
 
-proceedings_chairs:
-  - first_name: "Manuel"
+  manuel_wimmer:
+    first_name: "Manuel"
     last_name: "Wimmer"
     affiliation: "Johannes Kepler University Linz, Austria"
     email: "manuel.wimmer@jku.at"
     bio: "Full Professor, Institute of Business Informatics - Software Engineering. Research in software engineering for quantum computing, cyber-physical systems, and digital twins."
-    photo: ""
-  - first_name: "Jose"
+    photo: "https://images.weserv.nl/?url=se.jku.at/wp-content/uploads/2019/02/Wimmer.jpg&w=300&h=300&fit=cover"
+
+  jose_garcia_alonso:
+    first_name: "Jose"
     last_name: "Garcia-Alonso"
     affiliation: "University of Extremadura, Spain"
     email: "jgaralo@unex.es"
     bio: "Associate Professor. Research spans quantum software engineering, pervasive computing, e-Health, and service-oriented systems. Director of Technology Transfer and Business Development."
-    photo: ""
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQEx0gWktdwntA/profile-displayphoto-crop_800_800/B4EZxGiDxiIsAI-/0/1770709860563?e=1783555200&v=beta&t=bgBNMqsS2zXhX__bX3gWx2FfXhxnVoY-DG7YQ4nbKH4"
 
-pc_members:
-  - first_name: "Jose"
-    last_name: "Garcia-Alonso"
-    affiliation: "University of Extremadura, Spain"
-    photo: ""
-  - first_name: "Floris"
+  floris_geerts:
+    first_name: "Floris"
     last_name: "Geerts"
     affiliation: "University of Antwerp, Belgium"
-    photo: ""
-  - first_name: "Oleksandr"
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQGhEGsvOaayrg/profile-displayphoto-crop_800_800/B4EZ2WxdR2I0AM-/0/1776351042608?e=1783555200&v=beta&t=VhmTjJXsLlOqe6h-NKFucHdy50mPpTny6B4QmYqCymI"
+
+  oleksandr_kozachuk:
+    first_name: "Oleksandr"
     last_name: "Kozachuk"
     affiliation: "Exasol, Germany"
-    photo: ""
-  - first_name: "Nicole"
+    photo: "https://media.licdn.com/dms/image/v2/D4D03AQHXiE--n2iVhQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1687952038697?e=1783555200&v=beta&t=F4lcxCGItgj3FP3CT-eOt9RSpDqaadONSXX53eJbdHw"
+
+  nicole_schweikardt:
+    first_name: "Nicole"
     last_name: "Schweikardt"
     affiliation: "Humboldt University of Berlin, Germany"
-    photo: ""
-  - first_name: "George"
+    photo: "https://images.weserv.nl/?url=fonda.hu-berlin.de/wp-content/uploads/2022/04/Nicole-Schweikardt.jpeg&w=300&h=300&fit=cover"
+
+  george_stamatiou:
+    first_name: "George"
     last_name: "Stamatiou"
     affiliation: "FORTH-ICS, Greece"
-    photo: ""
-  - first_name: "Uta"
+    photo: "https://media.licdn.com/dms/image/v2/D4D03AQGeo5d7sX-jHw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727545566898?e=1783555200&v=beta&t=i5jLhNNKLOE8k3-AHOs-ehlvcnsRPTZsp1i7V3pE9y4"
+
+  uta_stoerl:
+    first_name: "Uta"
     last_name: "Störl"
     affiliation: "Fernuniversität in Hagen, Germany"
-    photo: ""
-  - first_name: "Manuel"
-    last_name: "Wimmer"
-    affiliation: "Johannes Kepler University Linz, Austria"
-    photo: ""
-  - first_name: "Frank"
+    photo: "https://media.licdn.com/dms/image/v2/D4D03AQH8w93jDBVQFg/profile-displayphoto-crop_800_800/B4DZ1C9HmrKUAM-/0/1774944816566?e=1783555200&v=beta&t=35tdSb1qRqJ9RtFnWkISahGQI3_XvyX2VVeexHQzeCU"
+
+  frank_leymann:
+    first_name: "Frank"
     last_name: "Leymann"
     affiliation: "University of Stuttgart, Germany"
-    photo: ""
-  - first_name: "Bettina"
+    photo: "https://images.weserv.nl/?url=www.iaas.uni-stuttgart.de/img/frank.jpg&w=300&h=300&fit=cover"
+
+  bettina_kemme:
+    first_name: "Bettina"
     last_name: "Kemme"
     affiliation: "McGill University, Canada"
     email: "bettina.kemme@mcgill.ca"
-    bio: "Professor and head of the Distributed Information Systems Lab (DISL). Over 100 refereed publications. Recipient of the VLDB 10-Year Test-of-Time Award and the 2024 VLDB Women in Database Award."
-    photo: ""
+    photo: "https://media.licdn.com/dms/image/v2/C5603AQEHfJVH6nFv6A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1537801324510?e=1783555200&v=beta&t=Twzdw6LoRM6O-878ua3-gJrU5l3JzxGUcKferLLp-mw"
+
+  masish_kesarwani:
+    first_name: "Manish"
+    last_name: "Kesarwani"
+    affiliation: "IBM Research, India"
+    photo: "https://media.licdn.com/dms/image/v2/C4D03AQHDL3o6lP0yvA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516825073024?e=2147483647&v=beta&t=XNiVSXlzbbLguxOANXnVEbR0ZE5QUdsvYI8i8dMA_34"
+    website: "https://research.ibm.com/people/manish-kesarwani"
+    bio: "Research Scientist at IBM Research India and Ph.D. scholar at IISc Bangalore (Database Systems Lab). IEEE Senior Member with a decade of research experience, currently working on quantum computing for DBMS engines design."
+    keynote_title: "Relational Database Engines on Quantum Platforms"
+    keynote_abstract: |
+      Quantum computing is rapidly progressing from theory to practice, with fault-tolerant hardware expected within the coming decade. These advances raise a fundamental question for the database community: can quantum computing help solve core DBMS problems?
+
+      This keynote talk explores the applicability of quantum computing to database management systems. We begin by examining recent advances in applying quantum algorithms to core DBMS tasks, including query optimization and index configuration selection. While these early results demonstrate the potential of quantum techniques, they also expose fundamental challenges in adapting database tasks to quantum hardware. The talk discusses these challenges and their implications for future system design, before concluding with a roadmap of open research problems that must be addressed to realize practical quantum database systems.
+
+general_chairs:
+  - haridimos_kondylakis
+  - stefanie_scherzinger
+
+pc_chairs:
+  - vasilis_efthymiou
+  - yannis_tzitzikas
+
+proceedings_chairs:
+  - manuel_wimmer
+  - jose_garcia_alonso
+
+pc_members:
+  - jose_garcia_alonso
+  - floris_geerts
+  - bettina_kemme
+  - oleksandr_kozachuk
+  - frank_leymann
+  - nicole_schweikardt
+  - george_stamatiou
+  - uta_stoerl
+  - manuel_wimmer
+
+keynote_speakers:
+  - masish_kesarwani
+
+# Schedule
+schedule:
+  - time: "09:00 - 09:15"
+    activity: "Opening Remarks & Workshop Overview"
+  - time: "09:15 - 10:15"
+    activity: "Keynote Talk 1"
+  - time: "10:15 - 10:45"
+    activity: "Coffee Break"
+  - time: "10:45 - 12:15"
+    activity: "Paper Session 1 (3-4 papers)"
+  - time: "12:15 - 13:30"
+    activity: "Lunch Break"
+  - time: "13:30 - 14:30"
+    activity: "Keynote Talk 2"
+  - time: "14:30 - 15:45"
+    activity: "Paper Session 2 (3-4 papers)"
+  - time: "15:45 - 16:15"
+    activity: "Coffee Break"
+  - time: "16:15 - 17:15"
+    activity: "Panel / Moderated Discussion"
+  - time: "17:15 - 17:30"
+    activity: "Closing Remarks & Outlook"
 
 # ── Jekyll settings ──
 baseurl: ""

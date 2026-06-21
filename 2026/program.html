@@ -11,25 +11,51 @@ permalink: /2026/program/
 
 <h3>Tentative Schedule &mdash; {{ site.dates.workshop }}</h3>
 <table>
-<thead>
-    <tr><th>Time</th><th>Activity</th></tr>
-</thead>
-<tbody>
-    <tr><td>09:00 - 09:15</td><td>Opening Remarks &amp; Workshop Overview</td></tr>
-    <tr><td>09:15 - 10:15</td><td>Keynote Talk 1</td></tr>
-    <tr><td>10:15 - 10:45</td><td>Coffee Break</td></tr>
-    <tr><td>10:45 - 12:15</td><td>Paper Session 1 (3-4 papers)</td></tr>
-    <tr><td>12:15 - 13:30</td><td>Lunch Break</td></tr>
-    <tr><td>13:30 - 14:30</td><td>Keynote Talk 2</td></tr>
-    <tr><td>14:30 - 15:45</td><td>Paper Session 2 (3-4 papers)</td></tr>
-    <tr><td>15:45 - 16:15</td><td>Coffee Break</td></tr>
-    <tr><td>16:15 - 17:15</td><td>Panel / Moderated Discussion</td></tr>
-    <tr><td>17:15 - 17:30</td><td>Closing Remarks &amp; Outlook</td></tr>
-</tbody>
+    <thead>
+        <tr><th>Time</th><th>Activity</th></tr>
+    </thead>
+    <tbody>
+        {% for slot in site.schedule %}
+        <tr><td>{{ slot.time }}</td><td>{{ slot.activity }}</td></tr>
+        {% endfor %}
+    </tbody>
 </table>
 
 <h2>Keynote Speakers</h2>
 <p>
-    The workshop will feature two invited keynote talks by leading researchers and practitioners at the intersection of quantum computing and data/knowledge management.
-    Speakers will be selected for their contributions to quantum computing and/or data and knowledge management, their ability to address both theoretical and systems-level aspects, and the relevance of their work to real-world data-centric and hybrid classical-quantum applications.
+    {{ site.workshop_short_name }} {{ site.year }} will feature two invited keynote talks by leading
+    researchers at the intersection of quantum computing and data/knowledge management.
 </p>
+
+{% for person_id in site.keynote_speakers %}
+<div class="keynote-card">
+    <div class="keynote-top">
+        {% assign person = site.people[person_id] %}
+        {% assign person_photo = person.photo | default: "" | strip %}
+        {% capture initials %}{{ person.first_name | slice: 0, 1 }}{{ person.last_name | slice: 0, 1 }}{% endcapture %}
+        {% if person_photo != "" %}
+            <img class="keynote-avatar" src="{{ person.photo | relative_url }}" alt="Photo of {{ person.first_name }} {{ person.last_name }}">
+        {% else %}
+            <span class="keynote-avatar keynote-avatar-fallback" aria-hidden="true">{{ initials | upcase }}</span>
+        {% endif %}
+        <div class="keynote-headline">
+            <strong>
+                {% if person.website %}
+                    <a href="{{ person.website }}" target="_blank">{{ person.first_name }} {{ person.last_name }}</a>
+                {% else %}
+                    {{ person.first_name }} {{ person.last_name }}
+                {% endif %}
+            </strong>
+            <span class="keynote-affiliation">{{ person.affiliation }}</span>
+        </div>
+    </div>
+
+    <p class="keynote-bio">{{ person.bio }}</p>
+
+    <div class="keynote-talk">
+        <span class="keynote-label">Title</span>
+        <h4 class="keynote-title">{{ person.keynote_title }}</h4>
+        <div class="keynote-abstract">{{ person.keynote_abstract | markdownify }}</div>
+    </div>
+</div>
+{% endfor %}
