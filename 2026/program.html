@@ -46,7 +46,7 @@ permalink: /2026/program/
                     {{ person.first_name }} {{ person.last_name }}
                 {% endif %}
             </strong>
-            <span class="keynote-affiliation">{{ person.affiliation }}</span>
+            <span class="keynote-affiliation">{{ person.affiliation }}{% if person.email %}<a href="mailto:{{ person.email }}"> | {{ person.email }}</a>{% endif %}</span>
         </div>
     </div>
 

@@ -39,83 +39,89 @@ people:
     last_name: "Kondylakis"
     affiliation: "University of Crete, Greece"
     email: "kondylak@ics.forth.gr"
-    bio: "Associate Professor of Big Data Engineering. Affiliated Researcher at FORTH-ICS. Has delivered tutorials at EDBT, ISWC, VLDB and co-organized workshops and conferences including ISWC, IJCKG, HEDAI, QCDK, and IEEE Quantum Workshop."
     photo: "assets/img/people/haridimos_kondylakis.jpg"
+    bio: "Associate Professor of Big Data Engineering. Affiliated Researcher at FORTH-ICS. Has delivered tutorials at EDBT, ISWC, VLDB and co-organized workshops and conferences including ISWC, IJCKG, HEDAI, QCDK, and IEEE Quantum Workshop."
 
   stefanie_scherzinger:
     first_name: "Stefanie"
     last_name: "Scherzinger"
     affiliation: "University of Passau, Germany"
     email: "stefanie.scherzinger@uni-passau.de"
-    bio: "Full Professor of Computer Science, heading the Scalable Database Systems group. Research focuses on database schema management and quantum computing for database management tasks including query optimization and schema matching."
     photo: "assets/img/people/stefanie_scherzinger.jpg"
+    bio: "Full Professor of Computer Science, heading the Scalable Database Systems group. Research focuses on database schema management and quantum computing for database management tasks including query optimization and schema matching."
 
   vasilis_efthymiou:
     first_name: "Vasilis"
     last_name: "Efthymiou"
     affiliation: "Harokopio University of Athens, Greece"
     email: "vefthym@hua.gr"
-    bio: "Assistant Professor. Formerly Postdoctoral Researcher at FORTH-ICS and IBM Research. Has given tutorials at SIGMOD, VLDB, WWW, ICDE, CIKM, ESWC and co-authored two books."
     photo: "assets/img/people/vasilis_efthymiou.jpg"
+    bio: "Assistant Professor. Formerly Postdoctoral Researcher at FORTH-ICS and IBM Research. Has given tutorials at SIGMOD, VLDB, WWW, ICDE, CIKM, ESWC and co-authored two books."
 
   yannis_tzitzikas:
     first_name: "Yannis"
     last_name: "Tzitzikas"
     affiliation: "University of Crete & FORTH-ICS, Greece"
     email: "yannis@ics.forth.gr"
-    bio: "Professor of Information Systems. Head of Centre for Cultural Informatics of FORTH-ICS. Co-authored 3 books and over 210 papers. Four best paper awards."
     photo: "assets/img/people/yannis_tzitzikas.jpg"
+    bio: "Professor of Information Systems. Head of Centre for Cultural Informatics of FORTH-ICS. Co-authored 3 books and over 210 papers. Four best paper awards."
 
   manuel_wimmer:
     first_name: "Manuel"
     last_name: "Wimmer"
     affiliation: "Johannes Kepler University Linz, Austria"
     email: "manuel.wimmer@jku.at"
-    bio: "Full Professor, Institute of Business Informatics - Software Engineering. Research in software engineering for quantum computing, cyber-physical systems, and digital twins."
     photo: "assets/img/people/manuel_wimmer.jpg"
+    bio: "Full Professor, Institute of Business Informatics - Software Engineering. Research in software engineering for quantum computing, cyber-physical systems, and digital twins."
 
   jose_garcia_alonso:
     first_name: "Jose"
     last_name: "Garcia-Alonso"
     affiliation: "University of Extremadura, Spain"
     email: "jgaralo@unex.es"
-    bio: "Associate Professor. Research spans quantum software engineering, pervasive computing, e-Health, and service-oriented systems. Director of Technology Transfer and Business Development."
     photo: "assets/img/people/jose_garcia_alonso.jpg"
+    bio: "Associate Professor. Research spans quantum software engineering, pervasive computing, e-Health, and service-oriented systems. Director of Technology Transfer and Business Development."
 
   floris_geerts:
     first_name: "Floris"
     last_name: "Geerts"
     affiliation: "University of Antwerp, Belgium"
+    email: "floris.geerts@uantwerp.be"
     photo: "assets/img/people/floris_geerts.jpg"
 
   oleksandr_kozachuk:
     first_name: "Oleksandr"
     last_name: "Kozachuk"
     affiliation: "Exasol, Germany"
+    email: ""
     photo: "assets/img/people/oleksandr_kozachuk.jpg"
 
   nicole_schweikardt:
     first_name: "Nicole"
     last_name: "Schweikardt"
     affiliation: "Humboldt University of Berlin, Germany"
+    email: ""
     photo: "assets/img/people/nicole_schweikardt.jpg"
 
   george_stamatiou:
     first_name: "George"
     last_name: "Stamatiou"
     affiliation: "FORTH-ICS, Greece"
+    email: ""
     photo: "assets/img/people/george_stamatiou.jpg"
 
   uta_stoerl:
     first_name: "Uta"
     last_name: "Störl"
     affiliation: "Fernuniversität in Hagen, Germany"
+    email: ""
     photo: "assets/img/people/uta_stoerl.jpg"
 
   frank_leymann:
     first_name: "Frank"
     last_name: "Leymann"
     affiliation: "University of Stuttgart, Germany"
+    email: ""
     photo: "assets/img/people/frank_leymann.jpg"
 
   bettina_kemme:
@@ -125,13 +131,24 @@ people:
     email: "bettina.kemme@mcgill.ca"
     photo: "assets/img/people/bettina_kemme.jpg"
 
+  # Keynote Speakers
   masish_kesarwani:
     first_name: "Manish"
     last_name: "Kesarwani"
     affiliation: "IBM Research, India"
+    email: "manishkesarwani@in.ibm.com"
     photo: "assets/img/people/masish_kesarwani.jpg"
     website: "https://research.ibm.com/people/manish-kesarwani"
     bio: "Research Scientist at IBM Research India and Ph.D. scholar at IISc Bangalore (Database Systems Lab). IEEE Senior Member with a decade of research experience, currently working on quantum computing for DBMS engines design."
+
+  immanuel_trummer:
+    first_name: "Immanuel"
+    last_name: "Trummer"
+    affiliation: "Cornell University, USA"
+    email: "itrummer@cornell.edu"
+    photo: "assets/img/people/immanuel_trummer.jpg"
+    website: "https://www.cs.cornell.edu/people/immanuel-trummer"
+    bio: "Associate Professor of Computer Science at Cornell University. Research focuses on making data analysis more efficient and user-friendly, with emphasis on generative AI."
     keynote_title: "Relational Database Engines on Quantum Platforms"
     keynote_abstract: |
       Quantum computing is rapidly progressing from theory to practice, with fault-tolerant hardware expected within the coming decade. These advances raise a fundamental question for the database community: can quantum computing help solve core DBMS problems?
@@ -162,7 +179,6 @@ pc_members:
   - manuel_wimmer
 
 keynote_speakers:
-  - masish_kesarwani
 
 # Schedule
 schedule:
